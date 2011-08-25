@@ -2,6 +2,7 @@
 
 require 'sinatra/base'
 require 'haml'
+require 'sass'
 require 'rdiscount'
 require 'sqlite3'
 
