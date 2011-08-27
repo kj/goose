@@ -4,7 +4,7 @@ require 'sinatra/base'
 require 'haml'
 require 'sass'
 require 'rdiscount'
-require 'sqlite3'
+require 'redis'
 
 class Goose < Sinatra::Base
 
@@ -16,6 +16,11 @@ class Goose < Sinatra::Base
 
   get '/style.css' do
     sass :style
+  end
+
+  # For use with @font-face.
+  get '/fonts/:font' do |font|
+    send_file './fonts/' + font
   end
 
 end
