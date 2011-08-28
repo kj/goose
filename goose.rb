@@ -8,6 +8,8 @@ require 'redis'
 
 class Goose < Sinatra::Base
 
+  set :root, File.dirname(__FILE__)
+
   set :markdown, layout_engine: :haml
 
   get '/' do

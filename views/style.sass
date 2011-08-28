@@ -6,7 +6,7 @@
 
 @font-face
   font-family: shanti
-  src: url('/fonts/shanti.woff'), url('/fonts/shanti.eot')
+  src: url(/fonts/shanti.woff), url(/fonts/shanti.eot)
 
 // Boxes / Layout
 // Boxes / Layout
@@ -56,8 +56,15 @@ h3
   font-size: 17px
   font-weight: bold
   color: #c95
-  padding-left: 18px
-  border-width: 0px 0px 0px 6px
+  padding-left: 12px
+  border-width: 0px 0px 0px 12px
   border-color: #c95
   border-style: solid
   width: 400px
+  height: 24px
+
+h3:after
+  position: absolute 
+  // So it doesn't affect the text alignment.
+  padding-left: 12px
+  content: url(/images/icon-shuttle.png)
