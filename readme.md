@@ -17,4 +17,4 @@ Requires Gems
 Usage
 --------
 
-Run `./server` to start a production server, `./server-dev` to start a development server (reloads app on refresh). If it's your first time running the software you'll want to set up the redis database. To do this, run `./setup`.
+Run `./server` to start a production server, `./server-dev` to start a development server (reloads app on refresh). Both of these run the server on port 9393 (http://localhost:9393 in your browser). If it's your first time running the software you'll want to set up the redis database. To do this, run `./setup`.
