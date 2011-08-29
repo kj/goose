@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ruby setup_redis.rb

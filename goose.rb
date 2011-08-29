@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH << './lib'
+
 # Gems
 require 'sinatra/base'
 require 'rdiscount'
@@ -7,7 +9,7 @@ require 'haml'
 require 'sass'
 
 # Goose libraries
-require './goosedb'
+require 'goosedb'
 
 class Goose < Sinatra::Base
 
