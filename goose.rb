@@ -1,12 +1,17 @@
 #!/usr/bin/env ruby
 
+# Gems
 require 'sinatra/base'
+require 'rdiscount'
 require 'haml'
 require 'sass'
-require 'rdiscount'
-require 'redis'
+
+# Goose libraries
+require './goosedb'
 
 class Goose < Sinatra::Base
+
+  goose_db = GooseDB.new
 
   set :root, File.dirname(__FILE__)
 

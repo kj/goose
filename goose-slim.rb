@@ -1,11 +1,17 @@
 #!/usr/bin/env ruby
 
+# Gems
 require 'sinatra/base'
-require 'slim'
 require 'rdiscount'
-require 'sqlite3'
+require 'slim'
+require 'sass'
+
+# Goose libraries
+require './goosedb'
 
 class Goose < Sinatra::Base
+
+  goose_db = GooseDB.new
 
   set :slim, pretty: true
   # This makes sure slim HTML output is indented.
