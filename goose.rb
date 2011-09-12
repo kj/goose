@@ -3,6 +3,7 @@
 $LOAD_PATH << './lib'
 
 # Gems
+require 'bundler/setup'
 require 'sinatra/base'
 require 'rdiscount'
 require 'haml'
