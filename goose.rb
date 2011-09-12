@@ -16,7 +16,6 @@ class Goose < Sinatra::Base
   goose_db = GooseDB.new
 
   set :root, File.dirname(__FILE__)
-
   set :markdown, layout_engine: :haml
 
   get '/' do

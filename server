@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rackup -p 9393 config.ru

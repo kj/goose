@@ -2,6 +2,7 @@ require 'redis'
 require 'yaml'
 
 class GooseDB
+
   def initialize
     @config = YAML.load_file './config/redis.yml'
 
@@ -27,4 +28,5 @@ class GooseDB
     @goose_db.flushdb
     @goose_db.set 'player', '0' # Used for setting player ids in key format "player:id:attribute"
   end
+
 end
